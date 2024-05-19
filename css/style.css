@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* background:  #f8f9fa; */
+}
+li, a, button{
+    font-weight: 500px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #0056b3;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+header .logo{
+    max-width: 200px;
+    height: auto;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #bef009;
+}
+button {
+    padding: 9px 25px;
+    background-color:  #ffffff;
+    color: #0056b3;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+
+button:hover{
+    background-color: #bef009;
+    color: #ffffff;
+}
+.hero{
+    min-height: 100vh;
+    /* background: #007bff; */
+    background:  #f8f9fa; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    text-align: center;
+    /* color:#ffff; */
+}
+
+.content h1{
+    font-size: 65px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333333 ;
+}
+.content p{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #666666;
+}
+
+.hero .cta{
+    visibility: hidden;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color:#0056b3;
+    color: #ffffff;
+    padding: 20px 5%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+footer a{
+    transition: all 0.3 ease 0s;
+    color: rgb(255, 255, 255 , 0.5)
+}
+
+footer ul{
+    list-style:none;
+}
+
+footer ul li{
+    display: inline-block;
+    margin: 5px 20px;
+}
+footer a:hover{
+    color: rgb(255, 255, 255 , 1);
+}
+
+@media  (max-width: 530px){
+    header button{
+        display: none;
+        padding: 0px 0px;
+    }
+
+    .hero{
+        min-height: 100vh;
+        background:  #f8f9fa; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content{
+        text-align: center;
+    }
+    
+    .content h1{
+        font-size: 35px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: #333333 ;
+    }
+    .content p{
+        font-size: 15px;
+        margin-bottom: 15px;
+        color: #666666;
+    }
+
+    .hero .content .cta button{
+        visibility: visible;
+        padding: 9px 25px;
+        background-color:  #0056b3;
+        color: #ffffff;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3 ease 0s;
+    }
+
+    .hero .content .cta button:hover{
+        background-color: #bef009;
+        color: #ffffff;
+    }
+    
+    
+}
